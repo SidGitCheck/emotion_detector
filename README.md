@@ -61,8 +61,8 @@
 8. Author
 
     Siddhant Srivastava
-    GitHub: https://github.com/<your-username>
-    Email: your-email@example.com
+    GitHub: https://github.com/SidGitCheck
+    Email: siddhant110806@gmail.com
 
 9. License
 
