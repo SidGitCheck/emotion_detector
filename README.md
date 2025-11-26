@@ -1,90 +1,110 @@
-# 🎭 Emotion Detector — Real-Time Facial Emotion Recognition
+# Emotion Detector
 
-A deep-learning-based application that predicts human emotions from a **live webcam feed** using a Convolutional Neural Network (CNN) trained on the **FER-2013 dataset**.
+A real-time facial emotion recognition system using a Convolutional Neural Network (CNN) trained on the FER-2013 dataset.  
+The model detects faces from a webcam feed and classifies them into seven basic emotions:
 
-The model recognizes **7 basic human emotions**:
-<br>
+- Angry  
+- Disgust  
+- Fear  
+- Happy  
+- Neutral  
+- Sad  
+- Surprise  
 
-😡 Angry &nbsp;&nbsp; 🤢 Disgust &nbsp;&nbsp; 😨 Fear &nbsp;&nbsp; 😀 Happy  
-😢 Sad &nbsp;&nbsp; 😮 Surprise &nbsp;&nbsp; 😐 Neutral
-
-Built using **TensorFlow**, **OpenCV**, and **MediaPipe** — optimized for smooth CPU performance.
-
----
-
-## 🧠 What the App Does
-
-✔ Detects faces in real-time  
-✔ Classifies facial expressions into emotions  
-✔ Displays the predicted emotion above each face  
-✔ Works on standard webcams  
-✔ CPU-friendly & fast 🚀
+This project is built using TensorFlow, OpenCV, and MediaPipe.
 
 ---
 
-## 📂 Project Structure
+## Features
+
+- Real-time webcam emotion detection  
+- Face detection using MediaPipe  
+- Works efficiently on CPU  
+- Easy to set up and run locally  
+
+---
+
+## Project Structure
 
 emotion_detector/
 │
-├─ main.py # Real-time webcam detection app
-├─ requirements.txt # Dependencies
-├─ README.md # Project documentation
+├─ main.py # Real-time detection application
+├─ requirements.txt # Dependency list
 │
-├─ models/ # Model architecture & weights
+├─ models/ # Model architecture and trained weights
 │ ├─ best_cnn_fer2013.h5
 │ ├─ load_model_h5.py
 │ └─ model_builder.py
 │
 └─ assets/
-└─ demo.mp4 # Demo video of the working system
+└─ demo.mp4 # Demonstration video of the working project
 
 yaml
 Copy code
 
 ---
 
-## ⚙️ Setup & Run
+## Installation & Usage
 
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/SidGitCheck/emotion_detector.git
 cd emotion_detector
-2️⃣ Install required libraries
+2️⃣ Install the required libraries
 bash
 Copy code
 pip install -r requirements.txt
-3️⃣ Start the emotion detector
+3️⃣ Run the application
 bash
 Copy code
 python main.py
-Press Q to exit the webcam stream.
+Press Q to stop the webcam stream.
 
-🧩 Model Information
+Model Details
 Dataset: FER-2013 (Kaggle)
 
-Model: Custom CNN (48×48 input resolution)
+Input size: 48 × 48 × 3
 
-Classes: 7 emotions
+Classes: 7
 
-Training Framework: TensorFlow/Keras
+Framework: TensorFlow / Keras
 
-Designed specifically for real-time edge performance ⚡
+The model was trained separately using a custom CNN architecture, and the trained weights are included in this repository.
 
-🎥 Demo Video
-Check out how the model performs 🡻
+Demo
+A working example of the system is available here:
 
-👉 assets/demo.mp4
-(Plays inside GitHub on supported devices)
+bash
+Copy code
+assets/demo.mp4
+Open the video to see real-time emotion detection results.
 
-🚀 Future Enhancements
-📌 High confidence emotion overlay
-📌 Multi-face emotion support at once
-📌 Improve model accuracy with transfer learning
-📌 Deploy as a web/desktop app
-📌 Add dataset & model training logs
-
-👤 Author
+Author
 Siddhant Srivastava
-📧 Email: siddhant110806@gmail.com
-🔗 GitHub: SidGitCheck
+Email: siddhant110806@gmail.com
+GitHub: https://github.com/SidGitCheck
+
+yaml
+Copy code
+
+---
+
+Done ✔  
+This is clean, fully Markdown, and copy-paste ready.
+
+If you want, I can:
+
+- Add Shields.io **badges** (Python version, TensorFlow, repo stars)
+- Create a **banner/header image** for the top
+- Add **future work** and **results section**
+- Improve UI in the code (colored bounding boxes, probability display)
+
+Would you like badges added next to make it look more polished?
+
+
+
+
+
+
+
 
