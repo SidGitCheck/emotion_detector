@@ -18,7 +18,7 @@ emotion_detector/
 ├── notebooks/       # Jupyter notebooks for training/testing
 ├── assets/          # Sample images or visualizations
 │
-├── app.py           # Application file (Streamlit or Flask)
+├── main.py           # Application file (Streamlit or Flask)
 ├── requirements.txt # List of dependencies
 ├── README.md        # Project documentation
 └── .gitignore
@@ -42,11 +42,11 @@ pip install -r requirements.txt
 ### 3️⃣ Run the application
 If using Streamlit:
 ```
-streamlit run app.py
+streamlit run main.py
 ```
 Or if using Flask:
 ```
-python app.py
+python main.py
 ```
 
 ---
