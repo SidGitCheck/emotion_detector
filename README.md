@@ -1,87 +1,90 @@
-# 🎭 Emotion Detector
-A deep learning–based **facial emotion recognition** project that identifies human emotions from facial expressions using **Convolutional Neural Networks (CNN)**. Trained on the **FER-2013 dataset**, this model can recognize seven basic emotions from images or real-time webcam feeds.
+# 🎭 Emotion Detector — Real-Time Facial Emotion Recognition
+
+A deep-learning-based application that predicts human emotions from a **live webcam feed** using a Convolutional Neural Network (CNN) trained on the **FER-2013 dataset**.
+
+The model recognizes **7 basic human emotions**:
+<br>
+
+😡 Angry &nbsp;&nbsp; 🤢 Disgust &nbsp;&nbsp; 😨 Fear &nbsp;&nbsp; 😀 Happy  
+😢 Sad &nbsp;&nbsp; 😮 Surprise &nbsp;&nbsp; 😐 Neutral
+
+Built using **TensorFlow**, **OpenCV**, and **MediaPipe** — optimized for smooth CPU performance.
 
 ---
 
-## 🧠 Overview
-This project detects emotions such as: 😡 **Angry**, 🤢 **Disgust**, 😨 **Fear**, 😀 **Happy**, 😢 **Sad**, 😮 **Surprise**, and 😐 **Neutral**.
-It uses CNN-based deep learning techniques to analyze facial features and classify them into emotion categories.
+## 🧠 What the App Does
+
+✔ Detects faces in real-time  
+✔ Classifies facial expressions into emotions  
+✔ Displays the predicted emotion above each face  
+✔ Works on standard webcams  
+✔ CPU-friendly & fast 🚀
 
 ---
 
-## 📁 Project Structure
-```
+## 📂 Project Structure
+
 emotion_detector/
 │
-├── models/          # Trained model (.h5) and training history (.pkl)
-├── modules/         # Custom preprocessing or helper scripts
-├── notebooks/       # Jupyter notebooks for training/testing
-├── assets/          # Sample images or visualizations
+├─ main.py # Real-time webcam detection app
+├─ requirements.txt # Dependencies
+├─ README.md # Project documentation
 │
-├── main.py           # Application file (Streamlit or Flask)
-├── requirements.txt # List of dependencies
-├── README.md        # Project documentation
-└── .gitignore
-```
+├─ models/ # Model architecture & weights
+│ ├─ best_cnn_fer2013.h5
+│ ├─ load_model_h5.py
+│ └─ model_builder.py
+│
+└─ assets/
+└─ demo.mp4 # Demo video of the working system
+
+yaml
+Copy code
 
 ---
 
-## ⚙️ Installation & Usage
+## ⚙️ Setup & Run
 
-### 1️⃣ Clone this repository
-```
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/SidGitCheck/emotion_detector.git
 cd emotion_detector
-```
-
-### 2️⃣ Install dependencies
-```
+2️⃣ Install required libraries
+bash
+Copy code
 pip install -r requirements.txt
-```
-
-### 3️⃣ Run the application
-If using Streamlit:
-```
-streamlit run main.py
-```
-Or if using Flask:
-```
+3️⃣ Start the emotion detector
+bash
+Copy code
 python main.py
-```
+Press Q to exit the webcam stream.
 
----
+🧩 Model Information
+Dataset: FER-2013 (Kaggle)
 
-## 🧩 Model Info
-- **Dataset:** FER-2013 (from Kaggle)
-- **Model:** Custom CNN architecture
-- **Optimizer:** Adam
-- **Loss:** Categorical Crossentropy
-- **Validation Accuracy:** ~63% (example)
+Model: Custom CNN (48×48 input resolution)
 
-The trained model and training history are available in the `models/` folder:
-```
-models/
-├── model.h5
-└── history.pkl
-```
+Classes: 7 emotions
 
----
+Training Framework: TensorFlow/Keras
 
-## 🚀 Future Enhancements
-- Add live webcam emotion detection
-- Improve model accuracy using transfer learning
-- Deploy as a web app (Heroku / Hugging Face)
+Designed specifically for real-time edge performance ⚡
 
----
+🎥 Demo Video
+Check out how the model performs 🡻
 
-## 👤 Author
-**Siddhant Srivastava**
-- GitHub: [SidGitCheck](https://github.com/SidGitCheck)
-- Email: [siddhant110806@gmail.com](mailto:siddhant110806@gmail.com)
+👉 assets/demo.mp4
+(Plays inside GitHub on supported devices)
 
----
+🚀 Future Enhancements
+📌 High confidence emotion overlay
+📌 Multi-face emotion support at once
+📌 Improve model accuracy with transfer learning
+📌 Deploy as a web/desktop app
+📌 Add dataset & model training logs
 
-## 📄 License
-This project is licensed under the **MIT License**.  
-If you found this project helpful, consider ⭐ giving it a star on GitHub!
+👤 Author
+Siddhant Srivastava
+📧 Email: siddhant110806@gmail.com
+🔗 GitHub: SidGitCheck
 
