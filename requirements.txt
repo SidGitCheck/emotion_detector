@@ -1,0 +1,15 @@
+
+numpy==1.26.4
+pandas==2.2.1
+matplotlib==3.8.3
+opencv-python==4.10.0.84
+tensorflow==2.15.0
+keras==2.15.0
+mediapipe==0.10.14
+deepface==0.0.93
+retina-face==0.0.13
+imgaug==0.4.0
+scikit-learn==1.4.2
+tqdm==4.66.2
+seaborn==0.13.2
+ml-dtypes<0.3.0     
